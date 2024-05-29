@@ -8,7 +8,6 @@ import { store } from "../store";
 import { Docs } from "./Docs";
 // import { Optout } from "./Optout";
 import { Settings } from "./Settings";
-import { Height } from "@mui/icons-material";
 
 const FiltersContainer = styled.form`
     display: inline-flex;
