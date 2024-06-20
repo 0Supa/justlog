@@ -36,6 +36,11 @@ export function Message({ message, thirdPartyEmotes }: { message: LogMessage, th
 	let messageText = message.text;
 	let renderMessagePrefix = "";
 	if (message.tags['system-msg']) {
+		message.tags['system-msg'] = message.tags['system-msg']
+			.replace(/\\:/g, ';')
+			.replace(/\\s/g, ' ')
+			.replace(/\\\\/g, '\\')
+
 		messageText = messageText.replace(message.tags['system-msg'] + " ", "");
 
 		renderMessagePrefix = `${message.tags['system-msg']} `;
