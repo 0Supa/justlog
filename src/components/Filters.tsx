@@ -67,9 +67,23 @@ export function Filters() {
             />
             <TextField error={state.error} name="username" label="username or id:123" variant="filled" autoComplete="off" defaultValue={state.currentUsername} autoFocus={state.currentChannel !== null && state.currentUsername === null} />
             <Button variant="contained" color="primary" size="large" type="submit">load</Button>
-            <Settings />
-            <Docs />
-            <Metrics />
+            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+                <Settings />
+                <Docs />
+                <Metrics />
+                <div style={{ flexBasis: "100%", width: "0", wordBreak: "break-word" }}>
+                    <div>
+                        <a href="https://tv.supa.sh/" style={{
+                            backgroundImage: "linear-gradient( to right,#e50000,#ff8d00,#fe0,#028121,#004cff,#708 )",
+                            backgroundClip: "text",
+                            color: "transparent",
+                            fontWeight: "bold",
+                            fontSize: "14pt",
+                            fontFamily: "sans-serif",
+                        }}>tv.supa.sh</a>
+                    </div>
+                </div>
+            </div>
             {/* <Optout /> */}
         </FiltersContainer>
     </FiltersWrapper>
