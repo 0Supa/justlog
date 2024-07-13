@@ -8,6 +8,7 @@ import { store } from "../store";
 import { Docs } from "./Docs";
 // import { Optout } from "./Optout";
 import { Settings } from "./Settings";
+import { Metrics } from "./Metrics";
 
 const FiltersContainer = styled.form`
     display: inline-flex;
@@ -68,6 +69,7 @@ export function Filters() {
             <Button variant="contained" color="primary" size="large" type="submit">load</Button>
             <Settings />
             <Docs />
+            <Metrics />
             {/* <Optout /> */}
         </FiltersContainer>
     </FiltersWrapper>
