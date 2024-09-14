@@ -9,7 +9,7 @@ const MetricsWrapper = styled.div`
 
 export function Metrics() {
     const handleClick = () => {
-        window.open("https://metrics.supa.codes/public-dashboards/3e6f790903e84de180e576605fc97074", "_blank")?.focus();
+        window.open("https://metrics.supa.codes/d/rustlog/rustlog?orgId=1", "_blank")?.focus();
     }
 
     return <MetricsWrapper>
