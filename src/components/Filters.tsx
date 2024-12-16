@@ -53,7 +53,7 @@ export function Filters() {
         }
     };
 
-    return <FiltersWrapper style={{ height: "80px" }}>
+    return <FiltersWrapper>
         <FiltersContainer onSubmit={handleSubmit} action="none">
             <Autocomplete
                 id="autocomplete-channels"
@@ -71,7 +71,7 @@ export function Filters() {
                 <Settings />
                 <Docs />
                 <Metrics />
-                <div style={{ flexBasis: "100%", width: "0", wordBreak: "break-word" }}>
+                <div style={{ flexBasis: "100%", width: "0", overflow: "hidden" }}>
                     <div>
                         <a href="https://tv.supa.sh/" style={{
                             backgroundImage: "linear-gradient( to right,#e50000,#ff8d00,#fe0,#028121,#004cff,#708 )",
